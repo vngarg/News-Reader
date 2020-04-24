@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:new_reader/helper/data.dart';
 import 'package:new_reader/models/category_models.dart';
@@ -34,7 +35,19 @@ class _HomeState extends State<Home> {
       body: Container(
         child: Column(
           children: <Widget>[
-            
+            Container(
+              height: 70.0,
+              child: ListView.builder(
+                itemCount: categories.length,
+                shrinkWrap: true,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context , index) {
+                  return CategoryTile(
+                    imageUrl: categories[index].imageUrl,
+                    categoryName: categories[index].categoryName,
+                  );
+                },),
+            )
           ],
         ),
       ),
