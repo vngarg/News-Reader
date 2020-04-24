@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:new_reader/helper/data.dart';
+import 'package:new_reader/models/category_models.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -6,6 +8,14 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  List<CategoryModel> categories = List<CategoryModel>();
+  @override
+  void initState() {
+    super.initState();
+    categories = getCategories();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +32,11 @@ class _HomeState extends State<Home> {
         elevation: 0.0,
       ),
       body: Container(
-        child: Container(),
+        child: Column(
+          children: <Widget>[
+            
+          ],
+        ),
       ),
     );
   }
