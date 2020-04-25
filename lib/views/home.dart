@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:new_reader/helper/data.dart';
+import 'package:new_reader/helper/news.dart';
+import 'package:new_reader/models/article_model.dart';
 import 'package:new_reader/models/category_models.dart';
 
 class Home extends StatefulWidget {
@@ -10,10 +12,18 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   List<CategoryModel> categories = List<CategoryModel>();
+  List<ArticleModel> articles = List<ArticleModel>();
+
   @override
   void initState() {
     super.initState();
     categories = getCategories();
+  }
+
+  getNews() async {
+    News newsClass = News();
+    await newsClass.getNews();
+    articles = newsClass.news; 
   }
 
   @override

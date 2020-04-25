@@ -13,7 +13,21 @@ class News {
   var jsonData = jsonDecode(response.body);
 
   if(jsonData['status'] == 'ok') {
+    jsonData['articles'].forEach((element) {
+      if(element['urlToImage'] != null && element['description'] != null) {
+        ArticleModel articleModel = ArticleModel(
+          title: element['title'],
+          url: element['url'],
+          author: element['author'],
+          description: element['description'],
+          urlToImage: element['urlToImage'],
+          publishedAt: element['publishedAt'],
+          content: element['content']
+        );
 
+        news.add(articleModel);
+      }
+    });
   }
 
   }
