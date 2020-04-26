@@ -81,6 +81,7 @@ class _HomeState extends State<Home> {
                       child: ListView.builder(
                         itemCount: articles.length,
                         shrinkWrap: true,
+                        physics: ClampingScrollPhysics(),
                         itemBuilder: (context, index) {
                           return BlogTile(
                             // imageUrl: articles[index].urlToImage,
@@ -149,8 +150,24 @@ class BlogTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(bottom: 16.0),
       child: Column(
-        children: <Widget>[Text(title), Text(desc)],
+        children: <Widget>[
+          // ClipRRect(
+          //   borderRadius: BorderRadius.circular(6.0),
+          //   child: Image.network(imageUrl)),
+          SizedBox(height: 8.0,),
+          Text(title , style: TextStyle(
+            fontSize: 18.0,
+            fontWeight: FontWeight.w500,
+            color: Colors.black87
+          )),
+          SizedBox(
+            height: 8.0,
+          ),
+          Text(desc , style: TextStyle(
+            color: Colors.grey
+          ),)],
       ),
     );
   }
