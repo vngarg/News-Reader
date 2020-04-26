@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:new_reader/helper/data.dart';
@@ -76,12 +77,13 @@ class _HomeState extends State<Home> {
                     ),
                     // Text('${articles.length}'),
                     Container(
+                      padding: EdgeInsets.only(top: 16.0),
                       child: ListView.builder(
                         itemCount: articles.length,
                         shrinkWrap: true,
                         itemBuilder: (context, index) {
                           return BlogTile(
-                            imageUrl: articles[index].urlToImage,
+                            // imageUrl: articles[index].urlToImage,
                             title: articles[index].title,
                             desc: articles[index].description,
                           );
@@ -111,8 +113,8 @@ class CategoryTile extends StatelessWidget {
           children: <Widget>[
             ClipRRect(
                 borderRadius: BorderRadius.circular(6.0),
-                child: Image.network(
-                  imageUrl,
+                child: CachedNetworkImage(
+                  imageUrl: imageUrl,
                   width: 120.0,
                   height: 60.0,
                   fit: BoxFit.cover,
@@ -139,16 +141,16 @@ class CategoryTile extends StatelessWidget {
 }
 
 class BlogTile extends StatelessWidget {
-  final String imageUrl, title, desc;
+  final String title, desc;
 
   BlogTile(
-      {@required this.imageUrl, @required this.desc, @required this.title});
+      {@required this.desc, @required this.title});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Column(
-        children: <Widget>[Image.network(imageUrl), Text(title), Text(desc)],
+        children: <Widget>[Text(title), Text(desc)],
       ),
     );
   }
