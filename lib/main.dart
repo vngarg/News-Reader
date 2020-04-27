@@ -10,8 +10,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'S.G. News',
       theme: ThemeData(
-        // brightness: Brightness.dark
-        primaryColor: Colors.white
+        brightness: Brightness.dark
+        // primaryColor: Colors.white
       ),
       home: Home(),
     );

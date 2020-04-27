@@ -103,6 +103,10 @@ class BlogTile extends StatelessWidget {
             MaterialPageRoute(builder: (context) => ArticleView(blogUrl: url)));
       },
       child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.black)
+        ),
+        padding: EdgeInsets.all(4.0),
         margin: EdgeInsets.only(bottom: 16.0),
         child: Column(
           children: <Widget>[
@@ -116,7 +120,9 @@ class BlogTile extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 18.0,
                     fontWeight: FontWeight.w500,
-                    color: Colors.black87)),
+                    color: Colors.white
+                    // color: Colors.black87
+                    )),
             SizedBox(
               height: 8.0,
             ),

@@ -134,7 +134,9 @@ class CategoryTile extends StatelessWidget {
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(6.0),
-                    color: Colors.black26),
+                    color: Colors.white
+                    // color: Colors.black26
+                    ),
                 height: 60.0,
                 width: 120.0,
                 child: Text(
@@ -164,7 +166,11 @@ class BlogTile extends StatelessWidget {
             MaterialPageRoute(builder: (context) => ArticleView(blogUrl: url)));
       },
       child: Container(
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.black),
+        ),
         margin: EdgeInsets.only(bottom: 16.0),
+        padding: EdgeInsets.all(4.0),
         child: Column(
           children: <Widget>[
             // ClipRRect(
@@ -177,7 +183,9 @@ class BlogTile extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 18.0,
                     fontWeight: FontWeight.w500,
-                    color: Colors.black87)),
+                    color: Colors.white
+                    // color: Colors.black87
+                    )),
             SizedBox(
               height: 8.0,
             ),
