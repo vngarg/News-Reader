@@ -63,6 +63,7 @@ class _CategoryNewsState extends State<CategoryNews> {
             )
           : SingleChildScrollView(
               child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 16.0),
                 child: Column(
                   children: <Widget>[
                     Container(
