@@ -8,8 +8,12 @@ Here you can easily check the news updates ....
 - ***Updated many times a day.***
 
 ## App UI
-- [Home Screen](assets/HomeScreen.png)  [Category Screen](assets/Category_UI.png)
-- [News Screen](assets/News_Display.png)
+- ***Home Screen***<br>
+![HomeScreen](assets/HomeScreen.png)  
+- ***Category Screen***<br>
+![CategoryScreen](assets/Category_UI.png)
+- ***News Screen***<br>
+![NewsScreen](assets/News_Display.png)
 
 ### Credits 
 - [NewsApi.org](https://newsapi.org/)
