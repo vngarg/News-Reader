@@ -15,5 +15,8 @@ Here you can easily check the news updates ....
 - ***News Screen***<br>
 ![NewsScreen](assets/News_Display.png)
 
+## Download APK
+- [Click Here](https://drive.google.com/file/d/1OKokk2hfRUfE7Rv_Rz69_cOAznUo48Wh/view?usp=sharing)
+
 ### Credits 
 - [NewsApi.org](https://newsapi.org/)
