@@ -1,13 +1,14 @@
 # News Reader
 
-Here you can easily check the news updates .... 
+An Android App to keep you updated with latest happenings throughout the world.
+Scroll Down and Download the app now!
 
 ## Features
 - ***Dark Mode enabled.***
-- ***You can check news category wise.***
-- ***Updated many times a day.***
+- ***Read the news, category wise.***
+- ***Updated multiple times a day.***
 
-## App UI
+## App UI Snapshots
 - ***Home Screen***<br>
 ![HomeScreen](assets/HomeScreen.png)  
 - ***Category Screen***<br>
@@ -16,7 +17,7 @@ Here you can easily check the news updates ....
 ![NewsScreen](assets/News_Display.png)
 
 ## Download APK
-- [Click Here](https://drive.google.com/file/d/1OKokk2hfRUfE7Rv_Rz69_cOAznUo48Wh/view?usp=sharing)
+- [Click Here](https://drive.google.com/file/d/1OKokk2hfRUfE7Rv_Rz69_cOAznUo48Wh/view?usp=sharing) to download the apk for your android device.
 
-### Credits 
+#### Credits 
 - [NewsApi.org](https://newsapi.org/)
